@@ -3,29 +3,103 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00F28A308787BF1A83947A86 /* Pods_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B3EBED5C265885A67D73DF /* Pods_Tracker.framework */; };
+		585343EA2832AF89001053FE /* ShippingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585343E92832AF89001053FE /* ShippingCell.swift */; };
+		585343EC2832B2D2001053FE /* ShipmentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585343EB2832B2D2001053FE /* ShipmentsTableViewController.swift */; };
+		585343F42832B7AB001053FE /* Tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 585343F02832B7AB001053FE /* Tracker.xcdatamodeld */; };
 		5874DD8C27D0330D00151BAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5874DD8B27D0330D00151BAE /* AppDelegate.swift */; };
 		5874DD8E27D0330D00151BAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5874DD8D27D0330D00151BAE /* SceneDelegate.swift */; };
-		5874DD9027D0330D00151BAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5874DD8F27D0330D00151BAE /* ViewController.swift */; };
 		5874DD9327D0330D00151BAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5874DD9127D0330D00151BAE /* Main.storyboard */; };
-		5874DD9627D0330D00151BAE /* Tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5874DD9427D0330D00151BAE /* Tracker.xcdatamodeld */; };
 		5874DD9827D0330E00151BAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5874DD9727D0330E00151BAE /* Assets.xcassets */; };
 		5874DD9B27D0330E00151BAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5874DD9927D0330E00151BAE /* LaunchScreen.storyboard */; };
+		58830B0B2822D247009C5FAA /* Shipments+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58830B092822D247009C5FAA /* Shipments+CoreDataClass.swift */; };
+		58830B0C2822D247009C5FAA /* Shipments+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58830B0A2822D247009C5FAA /* Shipments+CoreDataProperties.swift */; };
+		58830B0E2822DCDD009C5FAA /* ShippingCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58830B0D2822DCDD009C5FAA /* ShippingCompany.swift */; };
+		58862123283561F60001211F /* Tracking Numbers.md in Resources */ = {isa = PBXBuildFile; fileRef = 58862122283561F60001211F /* Tracking Numbers.md */; };
+		58895D3C282F12880079C94D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58895D3B282F12880079C94D /* Colors.swift */; };
+		58895D3E282F13390079C94D /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58895D3D282F13390079C94D /* CustomTabBar.swift */; };
+		58895D40282F13850079C94D /* BaseViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58895D3F282F13850079C94D /* BaseViewContoller.swift */; };
+		58895D42282F13EE0079C94D /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58895D41282F13EE0079C94D /* BaseTableViewController.swift */; };
+		58895D44282F15A90079C94D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58895D43282F15A90079C94D /* SettingsViewController.swift */; };
+		58895D46282F16340079C94D /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58895D45282F16340079C94D /* CustomTabBarController.swift */; };
+		58A2C52727FDFBBA00A70F34 /* trackingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A2C52627FDFBBA00A70F34 /* trackingAPI.swift */; };
+		58A8F8CD2833F88C0029F046 /* pickupCoin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 58A8F8CC2833F88C0029F046 /* pickupCoin.wav */; };
+		58BE485B2821FDDC006A4CBA /* TrackingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BE485A2821FDDC006A4CBA /* TrackingsTableViewController.swift */; };
+		58D7E26027F4F756007A822A /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58D7E24E27F4F754007A822A /* Poppins-BoldItalic.ttf */; };
+		58D7E26127F4F756007A822A /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58D7E24F27F4F754007A822A /* Poppins-Medium.ttf */; };
+		58D7E26227F4F756007A822A /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58D7E25027F4F754007A822A /* Poppins-ExtraBoldItalic.ttf */; };
+		58D7E26327F4F756007A822A /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58D7E25127F4F754007A822A /* Poppins-ExtraLight.ttf */; };
+		58D7E26427F4F756007A822A /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58D7E25227F4F754007A822A /* Poppins-Italic.ttf */; };
+		58D7E26527F4F756007A822A /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58D7E25327F4F755007A822A /* Poppins-SemiBold.ttf */; };
+		58D7E26627F4F756007A822A /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58D7E25427F4F755007A822A /* Poppins-Thin.ttf */; };
+		58D7E26727F4F756007A822A /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58D7E25527F4F755007A822A /* Poppins-Regular.ttf */; };
+		58D7E26827F4F756007A822A /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58D7E25627F4F755007A822A /* Poppins-Black.ttf */; };
+		58D7E26927F4F756007A822A /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58D7E25727F4F755007A822A /* Poppins-MediumItalic.ttf */; };
+		58D7E26A27F4F756007A822A /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58D7E25827F4F755007A822A /* Poppins-ExtraBold.ttf */; };
+		58D7E26B27F4F756007A822A /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58D7E25927F4F755007A822A /* Poppins-LightItalic.ttf */; };
+		58D7E26C27F4F756007A822A /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58D7E25A27F4F755007A822A /* Poppins-SemiBoldItalic.ttf */; };
+		58D7E26D27F4F756007A822A /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58D7E25B27F4F755007A822A /* Poppins-Light.ttf */; };
+		58D7E26E27F4F756007A822A /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58D7E25C27F4F756007A822A /* Poppins-Bold.ttf */; };
+		58D7E26F27F4F756007A822A /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58D7E25D27F4F756007A822A /* Poppins-ThinItalic.ttf */; };
+		58D7E27027F4F756007A822A /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58D7E25E27F4F756007A822A /* Poppins-BlackItalic.ttf */; };
+		58D7E27127F4F756007A822A /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58D7E25F27F4F756007A822A /* Poppins-ExtraLightItalic.ttf */; };
+		58E6628D28131D710083C3F5 /* TrackingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E6628C28131D710083C3F5 /* TrackingCell.swift */; };
+		58EBA56727EBD3B7007F487F /* TrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EBA56627EBD3B7007F487F /* TrackingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		585343E92832AF89001053FE /* ShippingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingCell.swift; sourceTree = "<group>"; };
+		585343EB2832B2D2001053FE /* ShipmentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipmentsTableViewController.swift; sourceTree = "<group>"; };
+		585343F12832B7AB001053FE /* Tracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tracker.xcdatamodel; sourceTree = "<group>"; };
+		585343F22832B7AB001053FE /* Tracker 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Tracker 2.xcdatamodel"; sourceTree = "<group>"; };
+		585343F32832B7AB001053FE /* Tracker 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Tracker 3.xcdatamodel"; sourceTree = "<group>"; };
 		5874DD8827D0330D00151BAE /* Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5874DD8B27D0330D00151BAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5874DD8D27D0330D00151BAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5874DD8F27D0330D00151BAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5874DD9227D0330D00151BAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5874DD9527D0330D00151BAE /* Tracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tracker.xcdatamodel; sourceTree = "<group>"; };
 		5874DD9727D0330E00151BAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5874DD9A27D0330E00151BAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5874DD9C27D0330E00151BAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5874DD9C27D0330E00151BAE /* Info.plist */ = {isa = PBXFileReference; explicitFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58830B092822D247009C5FAA /* Shipments+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shipments+CoreDataClass.swift"; sourceTree = "<group>"; };
+		58830B0A2822D247009C5FAA /* Shipments+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shipments+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		58830B0D2822DCDD009C5FAA /* ShippingCompany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingCompany.swift; sourceTree = "<group>"; };
+		58862122283561F60001211F /* Tracking Numbers.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Tracking Numbers.md"; sourceTree = "<group>"; };
+		58895D3B282F12880079C94D /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		58895D3D282F13390079C94D /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		58895D3F282F13850079C94D /* BaseViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewContoller.swift; sourceTree = "<group>"; };
+		58895D41282F13EE0079C94D /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		58895D43282F15A90079C94D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		58895D45282F16340079C94D /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		58A2C52627FDFBBA00A70F34 /* trackingAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trackingAPI.swift; sourceTree = "<group>"; };
+		58A8F8CC2833F88C0029F046 /* pickupCoin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pickupCoin.wav; sourceTree = "<group>"; };
+		58BE485A2821FDDC006A4CBA /* TrackingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingsTableViewController.swift; sourceTree = "<group>"; };
+		58D7E24E27F4F754007A822A /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		58D7E24F27F4F754007A822A /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		58D7E25027F4F754007A822A /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		58D7E25127F4F754007A822A /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		58D7E25227F4F754007A822A /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		58D7E25327F4F755007A822A /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		58D7E25427F4F755007A822A /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		58D7E25527F4F755007A822A /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		58D7E25627F4F755007A822A /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		58D7E25727F4F755007A822A /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		58D7E25827F4F755007A822A /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		58D7E25927F4F755007A822A /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		58D7E25A27F4F755007A822A /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		58D7E25B27F4F755007A822A /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		58D7E25C27F4F756007A822A /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		58D7E25D27F4F756007A822A /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		58D7E25E27F4F756007A822A /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
+		58D7E25F27F4F756007A822A /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		58E6628C28131D710083C3F5 /* TrackingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingCell.swift; sourceTree = "<group>"; };
+		58EBA56627EBD3B7007F487F /* TrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingViewController.swift; sourceTree = "<group>"; };
+		63B3EBED5C265885A67D73DF /* Pods_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72C2B5AD11CD405A8ED038EB /* Pods-Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tracker.debug.xcconfig"; path = "Target Support Files/Pods-Tracker/Pods-Tracker.debug.xcconfig"; sourceTree = "<group>"; };
+		EC8506BC00C95AD4517648E2 /* Pods-Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tracker.release.xcconfig"; path = "Target Support Files/Pods-Tracker/Pods-Tracker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F28A308787BF1A83947A86 /* Pods_Tracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +119,8 @@
 			children = (
 				5874DD8A27D0330D00151BAE /* Tracker */,
 				5874DD8927D0330D00151BAE /* Products */,
+				E7EEB350FCDF707F3019384D /* Pods */,
+				CBC231C0CC89AA5EACE8A1E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +135,107 @@
 		5874DD8A27D0330D00151BAE /* Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				5874DD8B27D0330D00151BAE /* AppDelegate.swift */,
-				5874DD8D27D0330D00151BAE /* SceneDelegate.swift */,
-				5874DD8F27D0330D00151BAE /* ViewController.swift */,
-				5874DD9127D0330D00151BAE /* Main.storyboard */,
-				5874DD9727D0330E00151BAE /* Assets.xcassets */,
-				5874DD9927D0330E00151BAE /* LaunchScreen.storyboard */,
+				58D7E24C27F4F72D007A822A /* Delegates */,
+				58D7E24827F4F6E1007A822A /* Controllers */,
+				58D7E24B27F4F720007A822A /* Views */,
+				58D7E24A27F4F6EF007A822A /* Supporting Files */,
 				5874DD9C27D0330E00151BAE /* Info.plist */,
-				5874DD9427D0330D00151BAE /* Tracker.xcdatamodeld */,
 			);
 			path = Tracker;
+			sourceTree = "<group>";
+		};
+		58D7E24827F4F6E1007A822A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				58895D45282F16340079C94D /* CustomTabBarController.swift */,
+				58BE485A2821FDDC006A4CBA /* TrackingsTableViewController.swift */,
+				58EBA56627EBD3B7007F487F /* TrackingViewController.swift */,
+				585343EB2832B2D2001053FE /* ShipmentsTableViewController.swift */,
+				58895D43282F15A90079C94D /* SettingsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		58D7E24A27F4F6EF007A822A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				58862122283561F60001211F /* Tracking Numbers.md */,
+				58D7E27327F4F75E007A822A /* Fonts */,
+				5874DD9727D0330E00151BAE /* Assets.xcassets */,
+				58A8F8CC2833F88C0029F046 /* pickupCoin.wav */,
+				58895D3B282F12880079C94D /* Colors.swift */,
+				58895D3D282F13390079C94D /* CustomTabBar.swift */,
+				58830B0D2822DCDD009C5FAA /* ShippingCompany.swift */,
+				58E6628C28131D710083C3F5 /* TrackingCell.swift */,
+				585343E92832AF89001053FE /* ShippingCell.swift */,
+				58A2C52627FDFBBA00A70F34 /* trackingAPI.swift */,
+				58895D3F282F13850079C94D /* BaseViewContoller.swift */,
+				58895D41282F13EE0079C94D /* BaseTableViewController.swift */,
+				58830B092822D247009C5FAA /* Shipments+CoreDataClass.swift */,
+				58830B0A2822D247009C5FAA /* Shipments+CoreDataProperties.swift */,
+				585343F02832B7AB001053FE /* Tracker.xcdatamodeld */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		58D7E24B27F4F720007A822A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5874DD9127D0330D00151BAE /* Main.storyboard */,
+				5874DD9927D0330E00151BAE /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		58D7E24C27F4F72D007A822A /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				5874DD8B27D0330D00151BAE /* AppDelegate.swift */,
+				5874DD8D27D0330D00151BAE /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		58D7E27327F4F75E007A822A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				58D7E25627F4F755007A822A /* Poppins-Black.ttf */,
+				58D7E25E27F4F756007A822A /* Poppins-BlackItalic.ttf */,
+				58D7E25C27F4F756007A822A /* Poppins-Bold.ttf */,
+				58D7E24E27F4F754007A822A /* Poppins-BoldItalic.ttf */,
+				58D7E25827F4F755007A822A /* Poppins-ExtraBold.ttf */,
+				58D7E25027F4F754007A822A /* Poppins-ExtraBoldItalic.ttf */,
+				58D7E25127F4F754007A822A /* Poppins-ExtraLight.ttf */,
+				58D7E25F27F4F756007A822A /* Poppins-ExtraLightItalic.ttf */,
+				58D7E25227F4F754007A822A /* Poppins-Italic.ttf */,
+				58D7E25B27F4F755007A822A /* Poppins-Light.ttf */,
+				58D7E25927F4F755007A822A /* Poppins-LightItalic.ttf */,
+				58D7E24F27F4F754007A822A /* Poppins-Medium.ttf */,
+				58D7E25727F4F755007A822A /* Poppins-MediumItalic.ttf */,
+				58D7E25527F4F755007A822A /* Poppins-Regular.ttf */,
+				58D7E25327F4F755007A822A /* Poppins-SemiBold.ttf */,
+				58D7E25A27F4F755007A822A /* Poppins-SemiBoldItalic.ttf */,
+				58D7E25427F4F755007A822A /* Poppins-Thin.ttf */,
+				58D7E25D27F4F756007A822A /* Poppins-ThinItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CBC231C0CC89AA5EACE8A1E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63B3EBED5C265885A67D73DF /* Pods_Tracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7EEB350FCDF707F3019384D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72C2B5AD11CD405A8ED038EB /* Pods-Tracker.debug.xcconfig */,
+				EC8506BC00C95AD4517648E2 /* Pods-Tracker.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +245,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5874DD9F27D0330E00151BAE /* Build configuration list for PBXNativeTarget "Tracker" */;
 			buildPhases = (
+				23897AF7C115166B56F3BD2F /* [CP] Check Pods Manifest.lock */,
 				5874DD8427D0330D00151BAE /* Sources */,
 				5874DD8527D0330D00151BAE /* Frameworks */,
 				5874DD8627D0330D00151BAE /* Resources */,
+				2110DADBC2A5DA49F37DD111 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,22 +297,98 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58D7E26827F4F756007A822A /* Poppins-Black.ttf in Resources */,
+				58D7E26E27F4F756007A822A /* Poppins-Bold.ttf in Resources */,
+				58D7E26D27F4F756007A822A /* Poppins-Light.ttf in Resources */,
+				58D7E26C27F4F756007A822A /* Poppins-SemiBoldItalic.ttf in Resources */,
+				58D7E26B27F4F756007A822A /* Poppins-LightItalic.ttf in Resources */,
+				58D7E26227F4F756007A822A /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				58D7E26927F4F756007A822A /* Poppins-MediumItalic.ttf in Resources */,
 				5874DD9B27D0330E00151BAE /* LaunchScreen.storyboard in Resources */,
+				58D7E26427F4F756007A822A /* Poppins-Italic.ttf in Resources */,
 				5874DD9827D0330E00151BAE /* Assets.xcassets in Resources */,
 				5874DD9327D0330D00151BAE /* Main.storyboard in Resources */,
+				58D7E26027F4F756007A822A /* Poppins-BoldItalic.ttf in Resources */,
+				58D7E27027F4F756007A822A /* Poppins-BlackItalic.ttf in Resources */,
+				58D7E26527F4F756007A822A /* Poppins-SemiBold.ttf in Resources */,
+				58D7E26127F4F756007A822A /* Poppins-Medium.ttf in Resources */,
+				58862123283561F60001211F /* Tracking Numbers.md in Resources */,
+				58A8F8CD2833F88C0029F046 /* pickupCoin.wav in Resources */,
+				58D7E27127F4F756007A822A /* Poppins-ExtraLightItalic.ttf in Resources */,
+				58D7E26A27F4F756007A822A /* Poppins-ExtraBold.ttf in Resources */,
+				58D7E26727F4F756007A822A /* Poppins-Regular.ttf in Resources */,
+				58D7E26327F4F756007A822A /* Poppins-ExtraLight.ttf in Resources */,
+				58D7E26F27F4F756007A822A /* Poppins-ThinItalic.ttf in Resources */,
+				58D7E26627F4F756007A822A /* Poppins-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2110DADBC2A5DA49F37DD111 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tracker/Pods-Tracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tracker/Pods-Tracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tracker/Pods-Tracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23897AF7C115166B56F3BD2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5874DD8427D0330D00151BAE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5874DD9627D0330D00151BAE /* Tracker.xcdatamodeld in Sources */,
-				5874DD9027D0330D00151BAE /* ViewController.swift in Sources */,
+				58BE485B2821FDDC006A4CBA /* TrackingsTableViewController.swift in Sources */,
+				58895D3C282F12880079C94D /* Colors.swift in Sources */,
+				585343F42832B7AB001053FE /* Tracker.xcdatamodeld in Sources */,
+				58830B0B2822D247009C5FAA /* Shipments+CoreDataClass.swift in Sources */,
+				58895D3E282F13390079C94D /* CustomTabBar.swift in Sources */,
+				58E6628D28131D710083C3F5 /* TrackingCell.swift in Sources */,
+				585343EC2832B2D2001053FE /* ShipmentsTableViewController.swift in Sources */,
+				58895D44282F15A90079C94D /* SettingsViewController.swift in Sources */,
 				5874DD8C27D0330D00151BAE /* AppDelegate.swift in Sources */,
+				58895D40282F13850079C94D /* BaseViewContoller.swift in Sources */,
+				58A2C52727FDFBBA00A70F34 /* trackingAPI.swift in Sources */,
+				585343EA2832AF89001053FE /* ShippingCell.swift in Sources */,
+				58830B0E2822DCDD009C5FAA /* ShippingCompany.swift in Sources */,
+				58895D46282F16340079C94D /* CustomTabBarController.swift in Sources */,
+				58830B0C2822D247009C5FAA /* Shipments+CoreDataProperties.swift in Sources */,
+				58895D42282F13EE0079C94D /* BaseTableViewController.swift in Sources */,
+				58EBA56727EBD3B7007F487F /* TrackingViewController.swift in Sources */,
 				5874DD8E27D0330D00151BAE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +533,7 @@
 		};
 		5874DDA027D0330E00151BAE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72C2B5AD11CD405A8ED038EB /* Pods-Tracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +553,7 @@
 		};
 		5874DDA127D0330E00151BAE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC8506BC00C95AD4517648E2 /* Pods-Tracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -347,14 +595,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		5874DD9427D0330D00151BAE /* Tracker.xcdatamodeld */ = {
+		585343F02832B7AB001053FE /* Tracker.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				5874DD9527D0330D00151BAE /* Tracker.xcdatamodel */,
+				585343F12832B7AB001053FE /* Tracker.xcdatamodel */,
+				585343F22832B7AB001053FE /* Tracker 2.xcdatamodel */,
+				585343F32832B7AB001053FE /* Tracker 3.xcdatamodel */,
 			);
-			currentVersion = 5874DD9527D0330D00151BAE /* Tracker.xcdatamodel */;
+			currentVersion = 585343F32832B7AB001053FE /* Tracker 3.xcdatamodel */;
 			path = Tracker.xcdatamodeld;
 			sourceTree = "<group>";
+			usesTabs = 0;
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
